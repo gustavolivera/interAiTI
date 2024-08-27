@@ -50,3 +50,11 @@ body{
     border-radius: 40px;
     padding: 20px;
 }
+
+.btn-login input{
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 40px;
+    color: gray;
+}
