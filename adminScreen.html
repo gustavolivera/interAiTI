@@ -1,25 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="styles/adminScreen.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Chamados</title>
-</head>
-<body>
-    <header>
-        <img src="img/Logo.png" alt="" class="logo">
-       
-        <div class="usermenu">    
-            <span>Bem vindo, usuário</span>
-            <ion-icon name="person-circle-outline"></ion-icon>
+  </head>
+  <body style="background-color: #a0bac2;">
+ 
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="img/Logo.png" alt="" width="75">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="img/person-circle-outline.svg" alt="" width="35">
+                Usuário
+              
+            </a>
+            <ul class="dropdown-menu">
+              <li class="ps-2">Departamento</li>
+              <li class="ps-2">Telefone</li>
+              <li class="ps-2">Email</li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Chamados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Relatórios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Editar opções</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-8 col-12">
+          <table
+            class="table table-striped table-hover ">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Motivo</th>
+                <th scope="col">Complemento</th>
+                <th scope="col">Urgência</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Internet</td>
+                <td>Sem conexão</td>
+                <td>Alta</td>
+                <td>Aberto</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Internet</td>
+                <td>Sem conexão</td>
+                <td>Alta</td>
+                <td>Aberto</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Internet</td>
+                <td>Sem conexão</td>
+                <td>Alta</td>
+                <td>Aberto</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Internet</td>
+                <td>Sem conexão</td>
+                <td>Alta</td>
+                <td>Aberto</td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Internet</td>
+                <td>Sem conexão</td>
+                <td>Alta</td>
+                <td>Aberto</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+        <div class="col-md-4 col-12">
+          <ul class="list-group list-group-flush rounded-3">
+            <li class="list-group-item">Solicitante:</li>
+            <li class="list-group-item">Setor:</li>
+            <li class="list-group-item">Telefone:</li>
+            <li class="list-group-item">E-mail:</li>
+            <li class="list-group-item">Observações:</li>
+          </ul>
+        </div>
+      </div>
+      <button type="button" class="btn btn-light">Atender</button>
+      <button type="button" class="btn btn-light">Concluir</button>
+      <button type="button" class="btn btn-light">Gerar relatório</button>
+      
+    </div>
+    
+      
 
-    </header>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+  </body>
 </html>
